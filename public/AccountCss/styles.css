@@ -1,30 +1,16 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
- #container {
+#container {
   display: gris;
   grid-template-columns: repeat(4, 25%);
   grid-gap: 20px;
   justify-content: center;
   padding: 5%;
   border: 5px solid yellow;
-} 
-.nvtxt {
-  color: rgba(255, 255, 255, 0.582);
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-}
-.nvtxt:hover {
-  color: white;
-}
-.diagonal {
-  fill: #e66225;
-  height: 24px;
-  width: 100%;
 }
 .diagona {
   fill: #1f1f1f;
@@ -63,16 +49,6 @@
 .set1 {
   width: 100%;
 }
-.btn1 {
-  padding-top: 10px;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  padding-right: 25px;
-  margin-top: -10px;
-  border-radius: 25px;
-  background-color: rgb(199, 38, 38);
-  color: rgb(255, 255, 255);
-}
 .btn3 {
   padding-top: 25px;
   padding-left: 60px;
@@ -82,9 +58,7 @@
   background-color: rgb(199, 38, 38);
   color: rgb(255, 255, 255);
 }
-.btn1:hover {
-  background-color: firebrick;
-}
+
 .btn2 {
   padding-top: 25px;
   padding-left: 60px;
@@ -120,21 +94,17 @@
   z-index: -2;
 }
 .txt3 {
-  background-color: #156918; /* Green */
-  border: none;
-
-  padding: 25px 32px;
-  display: inline-block;
+   padding: 10px 0;
+  display: inline-block; 
+  justify-content: center;
+  
   background-color: rgb(240, 87, 32);
-  height: 80px;
-  color: white;
+  height: 70px;
   border-radius: 35px;
-  margin-left: 470px;
+  margin:30px 40%;
   width: 300px;
   padding-left: 100px;
-  margin-top: 25px;
 }
 .txt3:hover {
-  background-color: firebrick
-
+  background-color: firebrick;
 }

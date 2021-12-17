@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +13,8 @@
       href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ydwfrxhhc7lgjuxkbif2"
     />
     <link rel="stylesheet" href="./AccountCss/pricing.css" />
+    <link rel="stylesheet" href="./AccountCss/Navbar.css" />
+    <link rel="stylesheet" href="./AccountCss/footer.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -94,17 +95,22 @@
 
     <div id="registration">
       <p id="regHead">Register for a Monthly Account</p>
-      <form class="form" onsubmit="Signup(event)">
+      
+      <form
+        class="form"
+        action="/pricing"
+        method="POST"
+      >
         <label for="email" class="smallHead"
           >Email (you'll need to confirm this email address)</label
         >
         <input type="email" id="email" name="email" required />
 
-        <label for="name" class="smallHead">First Name</label>
-        <input type="text" id="name" name="name" required />
+        <label for="first_name" class="smallHead">First Name</label>
+        <input type="text" id="name" name="first_name" required />
 
-        <label for="description" class="smallHead">Last name</label>
-        <input type="text" id="description" name="description" />
+        <label for="last_name" class="smallHead">Last name</label>
+        <input type="text" id="description" name="last_name" />
 
         <label for="username" class="smallHead">Username</label>
         <input type="text" id="username" name="username" required />
@@ -112,13 +118,13 @@
         <label for="password" class="smallHead">Password</label>
         <input type="password" id="password" name="password" required />
 
-        <label for="passwordAgain" class="smallHead">Password Again</label>
-        <input type="password" required />
+        <label for="confirmpassword" class="smallHead">Password Again</label>
+        <input type="password" name="confirmpassword" required />
 
-        <label for="payment" class="smallHead"
+        <label for="payment_option" class="smallHead"
           >Choose Your Payment Method</label
         >
-        <select name="" id="">
+        <select name="payment_option" id="">
           <option value="card">Credit / Debit Card</option>
           <option value="paypal">PayPal</option>
 
@@ -126,7 +132,7 @@
             type="tel"
             maxlength="16"
             id="card"
-            name="card"
+            name="payment_detail"
             mplaceholder="Card number"
             required
           />
@@ -152,59 +158,47 @@
       </form>
     </div>
 
+
     <div class="tweet">
-      <div>
-        <!-- <div class="tweetDiv">
-            <img class="photo" src="../Images/T1.jpg" alt="">
-            <img class="tweetIcon" src="../Images/tweet.png" alt="">
-          </div> -->
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            This is the best investment I made in my career. I mean, by
-            faaaaaaaar.
-          </p>
-          &mdash; Anthony R. 🇫🇷🚀💻 (@AnthonyHexium)
-          <a
-            href="https://twitter.com/AnthonyHexium/status/1296516367601078272?ref_src=twsrc%5Etfw"
-            >August 20, 2020</a
-          >
-        </blockquote>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </div>
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          This is the best investment I made in my career. I mean, by
+          faaaaaaaar.
+        </p>
+        &mdash; Anthony R. 🇫🇷🚀💻 (@AnthonyHexium)
+        <a
+          href="https://twitter.com/AnthonyHexium/status/1296516367601078272?ref_src=twsrc%5Etfw"
+          >August 20, 2020</a
+        >
+      </blockquote>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
 
-      <div>
-        <!-- <div class="tweetDiv">
-            <img class="photo" src="../Images/T2.jpg" alt="">
-            <img class="tweetIcon" src="../Images/tweet.png" alt="">
-          </div> -->
-
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            I’ve been using
-            <a href="https://twitter.com/FrontendMasters?ref_src=twsrc%5Etfw"
-              >@FrontendMasters</a
-            >
-            for years now. It’s crazy seeing it grow over the years and how
-            there’s just so much great content to learn from. I feel like every
-            company should have a subscription for their devs on there. The best
-            bang for your buck.
-          </p>
-          &mdash; J. (@jsilvax)
-          <a
-            href="https://twitter.com/jsilvax/status/1299178179064549376?ref_src=twsrc%5Etfw"
-            >August 28, 2020</a
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          I’ve been using
+          <a href="https://twitter.com/FrontendMasters?ref_src=twsrc%5Etfw"
+            >@FrontendMasters</a
           >
-        </blockquote>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </div>
+          for years now. It’s crazy seeing it grow over the years and how
+          there’s just so much great content to learn from. I feel like every
+          company should have a subscription for their devs on there. The best
+          bang for your buck.
+        </p>
+        &mdash; J. (@jsilvax)
+        <a
+          href="https://twitter.com/jsilvax/status/1299178179064549376?ref_src=twsrc%5Etfw"
+          >August 28, 2020</a
+        >
+      </blockquote>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
     </div>
 
     <div class="querry">
@@ -223,13 +217,6 @@
 </html>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
-<script src="JavaScript/pricing.js" ></script>
+<script src="JavaScript/pricing.js"></script>
 
 <script src="JavaScript/import.js" type="module"></script>
-
-
-
-
-
-
-
