@@ -1,0 +1,200 @@
+body{
+    background-color: #222222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#head{
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    padding: 40px 0px;
+    margin: 1px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 17% 75%;
+    
+    justify-content: center;
+}
+    #Right{
+    background-color: #111111;
+    justify-content: center;
+    padding: 40px;
+    }
+ 
+
+
+a:link{
+    text-decoration: none;
+}
+
+#sidebar>div{
+    width: 100%;
+    padding: 10px;
+    color: rgb(197, 69, 22);
+    font-size: 16px;
+    font-weight: 400;
+    font-family:sans-serif;
+    
+    border: none;
+}
+        
+
+
+#sidebar a{
+  
+    color: rgb(197, 69, 22);
+  
+}
+
+.green{
+    background-color: #333333;
+}
+
+.highlight {
+    background-color: black;
+}
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+.mail{
+   width: 100%; 
+}
+.a{
+    width: 100%; 
+    height: 30px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+p{
+    color:white;
+    font-size: 15px;
+}
+.middle{
+    display: flex;
+    margin-top: 20px;
+}
+.middle>div{
+   flex-basis: 45.5%;
+   
+}
+.middle>div:nth-child(2){
+   margin-left: 100px;
+    
+ }
+.middle>div input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+ }
+.btn{
+    width: 150px;
+    height: 60px;
+    border-radius: 60px;
+    margin-top: 50px;
+    background-color: rgb(250, 66, 34);
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+a{
+  
+    color:rgb(197, 69, 22);
+  
+}
+
+.form2{
+    margin-top: 50px;
+}
+
+.sticker{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23% ;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sticker>div{
+    height: 240px;
+   border-top: 6px solid rgb(78, 76, 76);
+   background-color: #111111;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.sticker>div:nth-child(1){
+   background-color: #90221e;
+   height: 245px;
+   border-top: 7px solid orangered;
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.sticker h4{
+   margin-top: 2px;
+   color: white;
+   padding: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sticker p{
+    margin-top: 20px;
+    padding: 10px;
+    justify-content:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .sticker span{
+     padding: 5px;
+     background-color: orangered;
+     border-radius: 2px;
+     font-weight: 600;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white ;
+     
+   
+ }
+
+ .note{
+     padding: 5px;
+     width: 100%;
+     height: 30px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .subsDiv h4{
+     color: white;
+ }
+
+ select{
+     width: 50%;
+     height: 40px;
+     border-radius: 8px;
+     
+ }
+ .selector{
+     margin-top: 50px;
+ }
+
+ .selector button{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #f2bc39;
+    padding: 5px;
+    border: none;
+    
+}
+.selector span{
+ font-weight: 900;
+    
+}
+
+
+
+
+

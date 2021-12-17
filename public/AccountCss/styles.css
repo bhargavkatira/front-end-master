@@ -1,0 +1,140 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+ #container {
+  display: gris;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 5%;
+  border: 5px solid yellow;
+} 
+.nvtxt {
+  color: rgba(255, 255, 255, 0.582);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.nvtxt:hover {
+  color: white;
+}
+.diagonal {
+  fill: #e66225;
+  height: 24px;
+  width: 100%;
+}
+.diagona {
+  fill: #1f1f1f;
+
+  height: 24px;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 2;
+}
+.background {
+  width: 100%;
+
+  margin-top: -30%;
+  position: relative;
+  z-index: -1;
+}
+.icons {
+  width: 90px;
+  margin-right: 10px;
+  opacity: 0.8;
+  margin-top: 35px;
+}
+.icons1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.918);
+  margin-top: -4px;
+  height: 155px;
+}
+.icons:hover {
+  opacity: 100%;
+  width: 100px;
+}
+.set1 {
+  width: 100%;
+}
+.btn1 {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  margin-top: -10px;
+  border-radius: 25px;
+  background-color: rgb(199, 38, 38);
+  color: rgb(255, 255, 255);
+}
+.btn3 {
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  padding-right: 60px;
+  border-radius: 35px;
+  background-color: rgb(199, 38, 38);
+  color: rgb(255, 255, 255);
+}
+.btn1:hover {
+  background-color: firebrick;
+}
+.btn2 {
+  padding-top: 25px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  padding-right: 60px;
+  margin-top: -0px;
+  border-radius: 35px;
+  background-color: rgb(255, 72, 0);
+  color: rgb(255, 255, 255);
+}
+.btn3:hover {
+  background-color: orangered;
+}
+.btn3:hover + .btn2 {
+  background-color: firebrick;
+}
+
+.btn2:hover {
+  background-color: firebrick;
+}
+
+.tweetbox {
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 580px;
+  background-color: rgb(27, 44, 77);
+  text-align: center;
+}
+
+.img2 {
+  width: 100%;
+  height: 100px;
+  z-index: -2;
+}
+.txt3 {
+  background-color: #156918; /* Green */
+  border: none;
+
+  padding: 25px 32px;
+  display: inline-block;
+  background-color: rgb(240, 87, 32);
+  height: 80px;
+  color: white;
+  border-radius: 35px;
+  margin-left: 470px;
+  width: 300px;
+  padding-left: 100px;
+  margin-top: 25px;
+}
+.txt3:hover {
+  background-color: firebrick
+
+}

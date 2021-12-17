@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Masters — Learn JavaScript, React, Vue & Angular from Masters of
+      Front-End Development!
+    </title>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ydwfrxhhc7lgjuxkbif2"
+    />
+    <link rel="stylesheet" href="./AccountCss/pricing.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+
+    <div id="course">
+      <p id="mainHead">Master Modern JavaScript to Full Stack</p>
+      <p class="secHead">
+        100+ Courses, Learning Paths & Mobile Apps for "On the Go" Learning
+      </p>
+      <div id="icons">
+        <img src="../Images/javascript.png" alt="" />
+        <img src="../Images/react.png" alt="" />
+        <img src="../Images/typescript.png" alt="" />
+        <img src="../Images/v.png" alt="" />
+        <img src="../Images/angular.png" alt="" />
+        <img src="../Images/node.png" alt="" />
+        <img src="../Images/css.png" alt="" />
+        <img src="../Images/db.png" alt="" />
+        <img src="../Images/webpack.png" alt="" />
+      </div>
+      <p class="smallHead">
+        If you already have an account, please
+        <a href="#" class="link">login</a>.
+      </p>
+    </div>
+
+    <div id="priceDiv">
+      <div class="subscription1" id="subscription1" onclick="transform(1)">
+        <p>MONTHLY</p>
+        <div class="price">
+          <i class="fas fa-check-circle" id="icon1"></i>
+          <p>$39</p>
+        </div>
+        <p>
+          Access all premium courses, workshops, and mobile apps. Renewed
+          monthly.
+        </p>
+      </div>
+
+      <div class="subscription2" id="subscription2" onclick="transform(2)">
+        <p>YEARLY</p>
+        <div class="price">
+          <p><i class="fas fa-check-circle" id="icon2"></i> $390</p>
+        </div>
+        <p>Access everything. Renewed yearly. Save $78 per year!</p>
+      </div>
+
+      <div class="subscription3" id="subscription3" onclick="transform(3)">
+        <p>MONTHLY TEAM</p>
+        <div class="price">
+          <p><i class="fas fa-check-circle" id="icon3"></i> $195</p>
+        </div>
+        <p>
+          Access for 10 people at your company, renewed monthly. Save 50% on our
+          monthly plans!
+        </p>
+      </div>
+
+      <div class="subscription4" id="subscription4" onclick="transform(4)">
+        <p>YEARLY TEAM</p>
+        <div class="price">
+          <p><i class="fas fa-check-circle" id="icon4"></i> $1950</p>
+        </div>
+        <p>
+          Access for 10 people at your company, renewed yearly. Save 50% on our
+          yearly plans!
+        </p>
+      </div>
+    </div>
+
+    <div id="registration">
+      <p id="regHead">Register for a Monthly Account</p>
+      <form class="form" onsubmit="Signup(event)">
+        <label for="email" class="smallHead"
+          >Email (you'll need to confirm this email address)</label
+        >
+        <input type="email" id="email" name="email" required />
+
+        <label for="name" class="smallHead">First Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="description" class="smallHead">Last name</label>
+        <input type="text" id="description" name="description" />
+
+        <label for="username" class="smallHead">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password" class="smallHead">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="passwordAgain" class="smallHead">Password Again</label>
+        <input type="password" required />
+
+        <label for="payment" class="smallHead"
+          >Choose Your Payment Method</label
+        >
+        <select name="" id="">
+          <option value="card">Credit / Debit Card</option>
+          <option value="paypal">PayPal</option>
+
+          <input
+            type="tel"
+            maxlength="16"
+            id="card"
+            name="card"
+            mplaceholder="Card number"
+            required
+          />
+        </select>
+
+        <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+
+        <p id="policy">
+          By clicking Start Learning, you agree to our
+          <a
+            href="https://static.frontendmasters.com/assets/legal/MasterServicesAgreement.pdf"
+            class="link"
+            >Terms of Service</a
+          >
+          and
+          <a
+            href="https://static.frontendmasters.com/assets/legal/PrivacyPolicy.pdf"
+            class="link"
+            >Privacy Policy</a
+          >.
+        </p>
+        <input type="submit" value="Start Learning" id="submitBtn" />
+      </form>
+    </div>
+
+    <div class="tweet">
+      <div>
+        <!-- <div class="tweetDiv">
+            <img class="photo" src="../Images/T1.jpg" alt="">
+            <img class="tweetIcon" src="../Images/tweet.png" alt="">
+          </div> -->
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            This is the best investment I made in my career. I mean, by
+            faaaaaaaar.
+          </p>
+          &mdash; Anthony R. 🇫🇷🚀💻 (@AnthonyHexium)
+          <a
+            href="https://twitter.com/AnthonyHexium/status/1296516367601078272?ref_src=twsrc%5Etfw"
+            >August 20, 2020</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+
+      <div>
+        <!-- <div class="tweetDiv">
+            <img class="photo" src="../Images/T2.jpg" alt="">
+            <img class="tweetIcon" src="../Images/tweet.png" alt="">
+          </div> -->
+
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            I’ve been using
+            <a href="https://twitter.com/FrontendMasters?ref_src=twsrc%5Etfw"
+              >@FrontendMasters</a
+            >
+            for years now. It’s crazy seeing it grow over the years and how
+            there’s just so much great content to learn from. I feel like every
+            company should have a subscription for their devs on there. The best
+            bang for your buck.
+          </p>
+          &mdash; J. (@jsilvax)
+          <a
+            href="https://twitter.com/jsilvax/status/1299178179064549376?ref_src=twsrc%5Etfw"
+            >August 28, 2020</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+    </div>
+
+    <div class="querry">
+      <p class="secHead">Questions on your account?</p>
+      <p class="smallHead">
+        Ask us anything! 😀
+        <a href="mailto:support@frontendmasters.com" class="link"
+          >support@frontendmasters.com</a
+        >
+      </p>
+    </div>
+    <footer>
+      <div id="foot"></div>
+    </footer>
+  </body>
+</html>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+<script src="JavaScript/pricing.js" ></script>
+
+<script src="JavaScript/import.js" type="module"></script>
+
+
+
+
+
+
+

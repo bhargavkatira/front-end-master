@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(34, 34, 34);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.div1 {
+  margin: auto;
+  width: 1200px;
+}
+.div1 > div {
+  display: inline-block;
+  margin: 10px;
+}
+
+.about_inst > img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+span {
+  vertical-align: top;
+}
+
+.div1 > div > img {
+  width: 170px;
+  height: 200px;
+}
+
+.div2 {
+  background-color: black;
+  color: white;
+  margin: auto;
+  margin-left: 50px;
+}
+.t_div {
+  vertical-align: top;
+  width: 500px;
+}
+.div2 > div > div {
+  display: inline-block;
+  margin: 20px;
+  height: 400px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.nameheading {
+  color: orangered;
+}
+
+#lect_parent > div {
+  display: flex;
+}
+
+#lect_parent > div > div {
+  margin: 20px;
+  cursor: pointer;
+}
+.lect {
+  width: 1200px;
+  margin: auto;
+}
+.div2 > div {
+  margin: auto;
+}
+
+.vid_div > img {
+  margin-left: 5px;
+  width: 600px;
+  height: 350px;
+}
+.t_div > button {
+  padding: 20px 80px;
+  background-color: rgb(192, 45, 40);
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+}

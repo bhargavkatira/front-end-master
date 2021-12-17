@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+.head_text {
+  margin-top: 100px;
+}
+
+.core_img_div {
+  width: 300px;
+  height: 300px;
+}
+
+.core_box {
+  padding: 15px;
+}
+
+.core_cont_div {
+  margin-right: 100px;
+  width: 700px;
+  padding: 10px 20px;
+}
+
+.core_cont_div > h1 {
+  color: rgb(164, 25, 6);
+  font-weight: 400;
+  font-size: 27px;
+  text-align: left;
+}
+
+.core_cont_div > p {
+  text-align: left;
+}
+
+.ins_div {
+  text-align: left;
+  padding: 10px;
+}
+
+.ins_div > img {
+  display: inline;
+}
+.ins_div > p {
+  display: inline;
+  margin: 30px 20px;
+}
+
+.btn_div {
+  padding: 5px;
+  align-items: left;
+  text-align: left;
+}
+
+.btn_div > button {
+  margin: 5px;
+  padding: 10px 30px;
+
+  border-radius: 20px;
+}
+
+#w_free_btn {
+  background-color: rgb(192, 45, 40);
+
+  border: rgb(192, 45, 40);
+}
+
+#w_full_btn {
+  background-color: rgb(201, 79, 23);
+  border: rgb(201, 79, 23);
+}
+
+circle {
+  fill: none;
+  stroke: rgb(218, 81, 37);
+  stroke-width: 20px;
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: cir_anim 2s linear forwards;
+}
+
+@keyframes cir_anim {
+  60% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 750;
+  }
+}
+
+#c_l {
+  display: flex;
+}
+
+#plus_div {
+  color: white;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+#plus_div > div {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  padding: 5px;
+  background-color: rgb(58, 58, 58);
+}
+
+#plus_div > div:nth-child(2n + 2) {
+  width: 2px;
+  height: 300px;
+}
+#plus_div > div:nth-child(2n + 1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-top: 40%;
+}
+
+#plus_div > div:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+}
+
+#counter {
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: 40%;
+}
+
+#head_banner_s {
+  background-image: url(https://static.frontendmasters.com/assets/fm/med/learn/background-beginner.jpg);
+
+  position: absolute;
+  top: 0px;
+
+  height: 500px;
+  width: 100%;
+
+  background-position: 50%;
+  opacity: 0.75;
+  background-size: cover;
+
+  z-index: -10;
+}
+
+#svg_el {
+  width: 300px;
+  height: 350px;
+  padding-left: 14px;
+  padding-top: 10px;
+  margin-top: -85%;
+}
+
+#svg_el > svg {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content_head {
+  display: flex;
+  margin: auto;
+  width: 65%;
+  margin-top: 40px;
+}
+
+#circle {
+  height: 250px;
+  align-content: center;
+  text-align: center;
+
+  margin-top: 70px;
+}
+
+.in_circle {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background-color: rgb(78, 78, 78);
+  margin: auto;
+  display: grid;
+  align-items: center;
+
+  text-align: center;
+}
+
+.in_circle > h2 {
+  margin-top: 40%;
+  vertical-align: top;
+}
+
+.out_circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #b8b5b5;
+  margin: auto;
+  display: grid;
+  align-items: center;
+}
+
+.head_text {
+  padding: 20px;
+}
+
+#lp_course {
+  margin: auto;
+  text-align: center;
+
+  width: 1000px;
+
+  margin-top: 405px;
+}
+
+#lp_parent > div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: black;
+  margin: 20px;
+  width: 1000px;
+}
+
+#lp_parent {
+  padding: 5px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f160c;
+  width: 100%;
+  height: 78px;
+}
+#options {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3%;
+}
+.logo {
+  width: 92%;
+  margin-left: 10%;
+  padding: 15px;
+}
+
+.nvtxt {
+  color: rgba(255, 255, 255, 0.582);
+  display: flex;
+  font-size: 18px;
+  font-weight: 300;
+}
+.nvtxt:hover {
+  color: white;
+}
+.diagonal {
+  fill: #e66225;
+  height: 24px;
+  width: 100%;
+}
+.btn1 {
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: rgb(199, 38, 38);
+  color: white;
+}
+
+.btn1:hover {
+  background-color: #d8413c;
+}

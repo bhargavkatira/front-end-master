@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #sidebar > div:nth-child(5){
+           background-color:#111111;
+        }
+    </style>
+       <link rel="stylesheet" href="./AccountCss/chat.css">
+       <!-- <link rel="stylesheet" href="./mscbot/static/css/home.css"> -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./AccountCss/style.css">
+    <link rel="stylesheet" href="./AccountCss/styles.css">
+    <link rel="stylesheet" href="./AccountCss/footer.css"> 
+    <link rel="stylesheet" href="./AccountCss/Navbar.css">
+</head>
+<body>
+   <!-- header -->
+   <header>
+    <div id="navbar"></div>
+</header>
+
+    <div id="head">
+        <h1 style="margin-left: 55px;">My Account</h1>
+       
+        <div id="main">
+            <div id="sidebar"></div>
+  
+            <div id="Right">
+             <h1>Upcoming Workshops</h1>
+             <div style="border: dotted; border-color: grey; border-radius: 10px; padding: 10px;">
+                <p>You haven't registered for any upcoming workshops. Why don't you have a look at our. <a href="">workshop schedule</a>?</p>
+             </div>
+            </div>
+   
+       </div>
+    </div>
+    
+ <!-- footer html -->
+
+<footer>
+    <div id="foot"></div>
+</footer>
+
+
+ <!-- Chat-boat-coad -->
+
+ <div class="chat-bar-collapsible">
+
+     <button id="chat-button" type="button" class="collapsible">
+         <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+     </button>
+
+     <div class="content">
+         
+           <!-- bot-header -->
+           <div class="bot-header"><img src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg"></div>
+
+         <div class="full-chat-block">
+             
+             <!-- Message Container -->
+             <div class="outer-container">
+
+           
+
+                 <div class="chat-container">
+                     <!-- Messages -->
+                     <div id="chatbox">
+                         <h5 id="chat-timestamp"></h5>
+                         <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                     </div>
+
+                     <!-- User input box -->
+                     <div class="chat-bar-input-block">
+                         <div id="userInput">
+                             <input id="textInput" class="input-box" type="text" name="msg"
+                                 placeholder="Write a reply..">
+                             <p></p>
+                         </div>
+
+                         <div class="chat-bar-icons">
+                             
+                             <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                 onclick="sendButton()"></i>
+                         </div>
+                     </div>
+
+                     <div id="chat-bar-bottom">
+                         <p></p>
+                     </div>
+
+                 </div>
+             </div>
+
+         </div>
+     </div>
+
+ </div>
+</body>
+</html>
+
+<script type="module" src="Javascript/import.js"></script>
+
+<script type="module" src="Javascript/sidebar_import.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="../mscbot/static/scripts/chat.js"></script>

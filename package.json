@@ -1,0 +1,27 @@
+{
+  "name": "frontendmaster-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swarnikaraj/frontEndMaster-clone.git"
+  },
+  "author": "Swarnnika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swarnikaraj/frontEndMaster-clone/issues"
+  },
+  "homepage": "https://github.com/swarnikaraj/frontEndMaster-clone#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "firebase": "^9.4.1",
+    "hbs": "^4.2.0",
+    "json-server": "^0.17.0"
+  }
+}
