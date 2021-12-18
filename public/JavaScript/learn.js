@@ -2,7 +2,7 @@ console.log(" I am going to take data")
 
 async function getdata_lp() {
   try{
-    response = await fetch("http://localhost:3000/learns/");
+    response = await fetch("/learns");
 
     data = await response.json();
      console.log(data, "I am here")
