@@ -4,14 +4,14 @@ function footer() {
     <div class="lst" > 
     <img class="logo2" src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg" alt="">    
     <ul>
-       <a href=""><li>Courses</li></a>
-       <a href=""><li>Learn</li></a>
-       <a href=""><li>Teachers</li></a>
+       <a href="http://localhost:3000/course"><li>Courses</li></a>
+       <a href="http://localhost:3000/learn"><li>Learn</li></a>
+       <a href="http://localhost:3000/lecture"><li>Teachers</li></a>
        <a href=""><li>Guides</li></a>
-       <a href=""><li>Pricing</li></a>
-       <a href=""><li>Login</li></a>
-       <a href=""><li>Join Now</li></a>
-       <a href=""><li>FAQ</li></a>
+       <a href="http://localhost:3000/pricing"><li>Pricing</li></a>
+       <a href="http://localhost:3000/login"><li>Login</li></a>
+       <a href="http://localhost:3000/pricing"><li>Join Now</li></a>
+       <a href="http://localhost:3000"><li>FAQ</li></a>
     
     </ul>
     
@@ -27,7 +27,7 @@ function footer() {
         <img class="lg" src="../Images/linkedin.png" alt="">
         <img class="lg" src="../Images/fb.png" alt="">
         <img class="lg" src="../Images/instagram.png" alt="">
-        <p style="color: rgb(143, 134, 134);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-left: 62%;margin-top: 10px; " >Email : <a style="color: orangered;" href="mailto:support@frontendmasters.com">support@frontendmasters.com</a></p>
+        <p style="color: rgb(143, 134, 134);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-left: 59%;margin-top: 10px; " >Email : <a style="color: orangered;" href="mailto:support@frontendmasters.com">support@frontendmasters.com</a></p>
     
     
     </div>

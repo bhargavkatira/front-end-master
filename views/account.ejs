@@ -38,13 +38,13 @@
     
     <div id="head" style="margin-top: 1px">
   
-      <h1 style="margin-top: -130px; margin-left: 65px;">My Account</h1>
+      <h1 id="AccountHead">My Account</h1>
       <div id="main">
         <div id="sidebar"></div>
 
         <div id="Right">
           <div class="formDiv">
-            <form onsubmit="Signup(event)" class="form1" id="signup-form">
+            <form onsubmit="update(event)" class="form1" id="signup-form">
               <h1 id="u1">Update User</h1>
 
               <p>
@@ -60,11 +60,11 @@
               <div class="middle">
                 <div>
                   <p>First Name</p>
-                  <input type="text" id="Fname" />
+                  <input type="text" id="first_name" />
                 </div>
                 <div>
                   <p>Last Name</p>
-                  <input type="text" id="Lname" />
+                  <input type="text" id="last_name" />
                 </div>
               </div>
 
@@ -73,17 +73,17 @@
           </div>
           
           <div class="formDiv">
-            <form action="" class="form2">
+            <form action="" class="form2" onsubmit="update(event)">
               <h1>Change Password</h1>
 
               <div class="mail">
                 <p>New Password</p>
-                <input type="text" class="a" />
+                <input type="text" class="a" id="new_password"/>
               </div>
 
               <div class="mail">
                 <p>Confirm Password</p>
-                <input type="text" class="a" />
+                <input type="text" class="a" id="confirmpassword" />
               </div>
 
               <div><input class="btn" type="submit" value="Update" /></div>
@@ -168,15 +168,13 @@
 <script src="JavaScript/sidebar_import.js" type="module"></script>
 
 <script>
-  function ss() {
-    window.location = "index.html";
-  }
 
-  var frontend = JSON.parse(localStorage.getItem("user1"));
+  let frontend = JSON.parse(localStorage.getItem("frontend_user"));
 
-  document.getElementById("u1").innerHTML = "Details";
+  document.getElementById("u1").innerHTML = `${frontend[0].first_name} ${frontend[0].last_name} `;
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="../mscbot/static/scripts/chat.js"></script>
+

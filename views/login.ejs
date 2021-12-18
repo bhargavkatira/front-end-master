@@ -12,49 +12,48 @@
     <link rel="stylesheet" href="./AccountCss/login.css" />
     <link rel="stylesheet" href="./AccountCss/Navbar.css" />
     <link rel="stylesheet" href="./AccountCss/footer.css" />
-
   </head>
   <body>
     <header>
       <div id="navbar"></div>
     </header>
-    
 
     <div class="loginDiv">
+      <form class="form" id="login-form" onsubmit="signIn(event)">
+        <label for="email" class="smallHead">Username or Email</label>
+        <input
+          id="email"
+          type="text"
+          name="email"
+          placeholder="Username or Email"
+          required
+        />
+        <label for="password" class="smallHead">Password</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
 
-      <form class="form" id="login-form"
-      action="/login"
-      method="POST"
-      >
-      <label for="email" class="smallHead">Username or Email</label>
-      <input id="email" type="text" name="email" placeholder="Username or Email" required />
-      <label for="password" class="smallHead">Password</label>
-      <input id="password" type="password" name="password" placeholder="Password"  required/>
+        <label for="remember"
+          ><input id="remember" type="checkbox"/> Remember Me
+        </label>
 
-      <label for="remember"
-        ><input id="remember" type="checkbox" required/> Remember Me
-      </label>
+        <input type="submit" value="Log In" id="signin" />
 
-       <input type="submit" value="Log In" id="signin" />
-
-      <a id="forget">forget your passwords?</a>
-    
+        <a id="forget">forget your passwords?</a>
+      </form>
     </div>
 
     <footer>
       <div id="foot"></div>
     </footer>
 
-
-    
   </body>
 </html>
 
 <script src="JavaScript/import.js" type="module"></script>
 
-  <script> 
-const {signin, signup} = require('../src/controllers/user.controller')
-
-
-</script>
-
+<script src="Javascript/login.js"></script>

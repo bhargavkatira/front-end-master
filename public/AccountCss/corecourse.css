@@ -197,10 +197,9 @@ button {
   border-radius: 50%;
   background-color: rgb(78, 78, 78);
   margin: auto;
- 
+
   display: grid;
   align-items: center;
-
 
   text-align: center;
 }
@@ -216,7 +215,7 @@ button {
   border-radius: 50%;
   background-color: #b8b5b5;
   margin: auto;
-  
+
   display: grid;
   align-items: center;
 }

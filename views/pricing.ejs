@@ -96,10 +96,9 @@
     <div id="registration">
       <p id="regHead">Register for a Monthly Account</p>
       
-      <form
+      <div
         class="form"
         id="signup-form"
-        onsubmit="Signup(e)"
       >
         <label for="email" class="smallHead"
           >Email (you'll need to confirm this email address)</label
@@ -119,7 +118,7 @@
         <input type="password" id="password" name="password" required />
 
         <label for="confirmpassword" class="smallHead">Password Again</label>
-        <input type="password" name="confirmpassword" required />
+        <input type="password" name="confirmpassword" id="confirmPassword" required />
 
         <label for="payment_option" class="smallHead"
           >Choose Your Payment Method</label
@@ -154,8 +153,8 @@
             >Privacy Policy</a
           >.
         </p>
-        <input type="submit" value="Start Learning" id="submitBtn" />
-      </form>
+        <input type="submit" value="Start Learning" onclick="signup()" id="submitBtn" />
+      </div>
     </div>
 
 

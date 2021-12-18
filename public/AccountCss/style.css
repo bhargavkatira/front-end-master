@@ -17,12 +17,14 @@ body {
   padding: 40px 0px;
   margin: 1px;
 }
+#AccountHead {
+  margin-top: -50px;
+  margin-left: 70px;
+}
 #main {
-
-   margin-top: 10px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 17% 75%;
-
   justify-content: center;
 }
 #Right {
@@ -33,15 +35,19 @@ body {
   gap: 10px;
   padding: 10px 50px;
 }
-.formDiv{
+.formDiv {
   /* border:  1px solid red; */
-  margin-top: -90px;
 }
 .formDiv h1 {
-  margin-bottom:  20px;
+  margin-bottom: 20px;
 }
 .formDiv p {
-  margin:10px 5px;
+  margin: 10px 5px;
+}
+ input { 
+  padding: 10px;
+  outline: none;
+  
 }
 
 a:link {

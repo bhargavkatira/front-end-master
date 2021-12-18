@@ -17,13 +17,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap:12px;
+  gap: 12px;
   font-size: 17px;
   color: white;
 }
 
-.form input{
-  padding:10px 20px;
+.form input {
+  padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -61,4 +61,3 @@ body {
 #forget:hover {
   color: #d18189;
 }
-

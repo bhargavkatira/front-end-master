@@ -1,7 +1,4 @@
-
-console.log(" I am goin to take data")
-
-
+console.log(" I am going to take data")
 
 async function getdata_lp() {
   try{
