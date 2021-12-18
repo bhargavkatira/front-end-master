@@ -45,7 +45,7 @@ async function getdata_lp() {
 
       h2 = document.createElement("h2");
       h2.innerHTML = item.level;
-
+                                                       
       p = document.createElement("p");
       p.innerHTML = item.description.slice(0,50);
       p.style.fontSize = "16px";
@@ -87,7 +87,8 @@ async function getdata_lp() {
 
     localStorage.setItem("course_l", JSON.stringify(item));
 
-    window.location.href = "corecourse.ejs";
+    window.location.href = "/course";
+
   }
 
   pc = document.querySelector("class", "counter");

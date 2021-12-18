@@ -4,9 +4,10 @@ const Courses = require("../models/courses.model");
 
 const upload = require("../middlewares/upload");
 
-const { schema } = require("../models/courses.model");
 
 const router = express.Router()
+
+
 
 router.post("/", upload.single("course_images"),async (req, res) => {
 
@@ -43,7 +44,7 @@ router.get("/",async (req, res) => {
 
     try{
 
-        const courses = await Courses.find().lean().exec()
+        const courses = await Courses.find().populate("instructor_id").populate("lecture_ids").lean().exec()
 
         console.log(courses)      
         return res.status(201).send(courses)
@@ -53,6 +54,8 @@ router.get("/",async (req, res) => {
         return res.status(500).json({status: "failed", message: e.message})
 
     }
+
+
 })
 
 

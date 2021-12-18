@@ -40,7 +40,7 @@ router.get("/",async (req, res) => {
 
     try{
 
-        const learn = await Learn.find().lean().exec()
+        const learn = await Learn.find().populate("course_ids").lean().exec()
 
         console.log(learn)      
         return res.send(learn)
@@ -50,6 +50,8 @@ router.get("/",async (req, res) => {
         return res.status(500).json({status: "failed", message: e.message})
 
     }
+
+
 })
 
 
