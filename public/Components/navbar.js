@@ -8,7 +8,7 @@ function navbar() {
 <h3><a style="text-decoration: none;"href="http://localhost:3000/learn"><p class="nvtxt">Learn</p></a></h3>
 <h3><a style="text-decoration: none;"href="http://localhost:3000/price"><p class="nvtxt">Pricing</p></a></h3>
 <h3><a style="text-decoration: none;"href="http://localhost:3000/login"><p class="nvtxt">Login</p></a></h3>
-<h3><a style="text-decoration: none; "href="http://localhost:3000/price"><p class="nvtxt btn1">Join Now</p></a></h3>
+<h3><a style="text-decoration: none; "href="http://localhost:3000/price"><p class=" btn1">Join Now</p></a></h3>
 
 </div>
 </div>
