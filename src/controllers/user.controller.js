@@ -36,22 +36,37 @@ const signup = async (req, res) => {
 };
 
 const signin = async (req, res) => {
-  try {
+    try {
     let user = await User.findOne({ email: req.body.email });
-
+  
     if (!user) {
-        res.status(400).send("error")
+        res.status(400).send("User not registered");
     }
-
+  
     const match = await user.checkPassword(req.body.password);
-
+  
     if (!match) {
-      res.status(400).send("error");
+      res.status(400).send("Invalid Credentials");
     }
-
+  
+    //   if (localStorage.getItem("frontend_user") === null) {
+    //   console.log(1)
+    //   localStorage.setItem("frontend_user", JSON.stringify([]));
+    //   } else {
+    //   console.log(2)
+    //   let arr = JSON.parse(localStorage.getItem("frontend_user"));
+    //   arr.push(user);
+    //   localStorage.setItem("frontend_user", JSON.stringify(arr));
+    //   }
+     
+    console.log(user)
     return res.render("account.ejs");
+  
   } catch (e) {
-    return res.status(500).render("login.ejs");
+    return res.status(500).json({
+      status: "Failed",
+      message: e.message,
+    });
   }
 };
 

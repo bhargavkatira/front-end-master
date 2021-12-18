@@ -98,8 +98,8 @@
       
       <form
         class="form"
-        action="/pricing"
-        method="POST"
+        id="signup-form"
+        onsubmit="Signup(e)"
       >
         <label for="email" class="smallHead"
           >Email (you'll need to confirm this email address)</label
@@ -107,10 +107,10 @@
         <input type="email" id="email" name="email" required />
 
         <label for="first_name" class="smallHead">First Name</label>
-        <input type="text" id="name" name="first_name" required />
+        <input type="text" id="first_name" name="first_name" required />
 
         <label for="last_name" class="smallHead">Last name</label>
-        <input type="text" id="description" name="last_name" />
+        <input type="text" id="last_name" name="last_name" />
 
         <label for="username" class="smallHead">Username</label>
         <input type="text" id="username" name="username" required />
@@ -124,14 +124,14 @@
         <label for="payment_option" class="smallHead"
           >Choose Your Payment Method</label
         >
-        <select name="payment_option" id="">
+        <select name="payment_option" id="payment_option">
           <option value="card">Credit / Debit Card</option>
           <option value="paypal">PayPal</option>
 
           <input
             type="tel"
             maxlength="16"
-            id="card"
+            id="payment_detail"
             name="payment_detail"
             mplaceholder="Card number"
             required
@@ -218,5 +218,6 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
 <script src="JavaScript/pricing.js"></script>
+
 
 <script src="JavaScript/import.js" type="module"></script>

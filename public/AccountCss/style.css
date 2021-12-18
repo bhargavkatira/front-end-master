@@ -18,15 +18,30 @@ body {
   margin: 1px;
 }
 #main {
+
+   margin-top: 10px;
   display: grid;
   grid-template-columns: 17% 75%;
 
   justify-content: center;
 }
 #Right {
+  border-left: 3px solid #333333;
   background-color: #111111;
-  justify-content: center;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 50px;
+}
+.formDiv{
+  /* border:  1px solid red; */
+  margin-top: -90px;
+}
+.formDiv h1 {
+  margin-bottom:  20px;
+}
+.formDiv p {
+  margin:10px 5px;
 }
 
 a:link {
@@ -93,7 +108,7 @@ p {
   width: 150px;
   height: 60px;
   border-radius: 60px;
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: rgb(250, 66, 34);
   font-size: 15px;
   color: white;
