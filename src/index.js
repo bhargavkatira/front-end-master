@@ -32,6 +32,8 @@ app.get("/course",(req, res)=>{
 })
 
 app.get("/learn",(req, res)=>{
+
+
     res.render("learn.ejs")
 })
 

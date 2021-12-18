@@ -1,17 +1,33 @@
+
+
+
 lp_parent = document.getElementById("lp_parent");
 
 items = JSON.parse(localStorage.getItem("course_l"));
 
+
+console.log(items.course_ids, " I am here")
+
+
 let about = document.getElementById("about_c");
 
-about.innerText = items.about;
+about.innerText = items.title;
 
 let small_about = document.getElementById("small_about_c");
-small_about.innerText = items.insidebox.smallabout;
+small_about.innerText = items.description;
 
-let arr = items.insidebox.coreContents;
 
-appendcourselist(arr);
+let courseids=items.course_ids
+console.log(courseids)
+
+
+
+appendcourselist(courseids)
+
+
+
+
+
 
 function appendcourselist(arr) {
   arr.forEach((item) => {
@@ -23,13 +39,13 @@ function appendcourselist(arr) {
     img = document.createElement("img");
     img.style.width = "300px";
     img.style.height = "300px";
-    img.src = item.courseimg;
+    img.src = item.head_img;
     img_div.append(img);
 
     cont_div = document.createElement("div");
 
     h1 = document.createElement("h1");
-    h1.innerText = item.itemname;
+    h1.innerText = item.title;
 
     ins_div = document.createElement("div");
     ins_div.setAttribute("class", "ins_div");
@@ -47,7 +63,7 @@ function appendcourselist(arr) {
     ins_div.append(ins_img, ins_name);
 
     ins_about = document.createElement("p");
-    ins_about.innerText = item.aboutcourse;
+    ins_about.innerText = item.description;
 
     btn_div = document.createElement("div");
     btn_div.setAttribute("class", "btn_div");
@@ -63,7 +79,7 @@ function appendcourselist(arr) {
     full_ac_btn.innerText = "Get Full Access";
 
     full_ac_btn.onclick = function () {
-      window.location.href = "Payment.html";
+      window.location.href = "/payment";
     };
     full_ac_btn.setAttribute("id", "w_full_btn");
 
@@ -81,20 +97,19 @@ function lectures(item) {
   console.log(item);
   localStorage.setItem("lectures_s", JSON.stringify(item));
 
-  window.location.href = "lecture.html";
+  window.location.href = "/lecture";
 }
 
 svg_circle = document.getElementById("svg_el");
-svg_circle.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300px">
+svg_circle.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="260px">
          <defs>
             <linearGradient id="GradientColor">
                <stop offset="0%" stop-color="#e91e63" />
                <stop offset="100%" stop-color="#673ab7" />
             </linearGradient>
          </defs>
-         <circle cx="130" cy="130" r="116" stroke-linecap="round" />
+         <circle cx="130" cy="120" r="115" stroke-linecap="round" />
  </svg>`;
-
 let counter = document.getElementById("counter");
 
 let number = 0;

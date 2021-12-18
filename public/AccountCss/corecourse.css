@@ -197,14 +197,16 @@ button {
   border-radius: 50%;
   background-color: rgb(78, 78, 78);
   margin: auto;
+ 
   display: grid;
   align-items: center;
+
 
   text-align: center;
 }
 
 .in_circle > h2 {
-  margin-top: 40%;
+  margin-top: 50%;
   vertical-align: top;
 }
 
@@ -214,6 +216,7 @@ button {
   border-radius: 50%;
   background-color: #b8b5b5;
   margin: auto;
+  
   display: grid;
   align-items: center;
 }
