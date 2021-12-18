@@ -1,17 +1,30 @@
+
+console.log(" I am goin to take data")
+
+
+
 async function getdata_lp() {
-    response = await fetch("http://13.232.78.165:5000/api/learningPath");
+  try{
+    response = await fetch("http://localhost:3000/learns/");
 
     data = await response.json();
-
+     console.log(data, "I am here")
     appendCourseType(data);
     return data;
   }
 
+  catch(e){console.log(e)}
+  }
+
+
   getdata_lp();
 
-  lp_parent = document.getElementById("lp_parent");
+  console.log("I am here too")
+
+   lp_parent = document.getElementById("lp_parent");
 
   function appendCourseType(dataarr) {
+
     dataarr.forEach((item) => {
       div = document.createElement("div");
 
@@ -31,10 +44,10 @@ async function getdata_lp() {
       outer_circle.append(inner_circle);
 
       h2 = document.createElement("h2");
-      h2.innerHTML = item.coursetype;
+      h2.innerHTML = item.level;
 
       p = document.createElement("p");
-      p.innerHTML = item.about;
+      p.innerHTML = item.description.slice(0,50);
       p.style.fontSize = "16px";
 
       div2 = document.createElement("div");
@@ -74,12 +87,12 @@ async function getdata_lp() {
 
     localStorage.setItem("course_l", JSON.stringify(item));
 
-    window.location.href = "corecourse.html";
+    window.location.href = "corecourse.ejs";
   }
 
   pc = document.querySelector("class", "counter");
 
-  console.log(pc);
+  // console.log(pc);
 
   // let counter = document.getElementById('counter')
   function playcount(counter) {

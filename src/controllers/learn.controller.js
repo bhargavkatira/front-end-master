@@ -43,7 +43,7 @@ router.get("/",async (req, res) => {
         const learn = await Learn.find().lean().exec()
 
         console.log(learn)      
-        return res.render("learn.ejs",{learn,})
+        return res.send(learn)
     }
     catch(e){
 
