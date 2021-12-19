@@ -35,11 +35,15 @@ function update(e) {
           "Content-Type": "application/json",
         },
       });
-  
+      
       let data1 = await response.json();
-      alert("User updated successfully !!")
+      alert("Profile updated successfully !!")
       console.log("Frontend_User:",data1);
-    
+      let arr = JSON.parse(localStorage.getItem("frontend_user"));
+      arr=[];
+      arr.push(data1);
+      localStorage.setItem("frontend_user", JSON.stringify(arr));
+      window.location.reload();
      
     } catch (err) {
       console.log("err:", err);

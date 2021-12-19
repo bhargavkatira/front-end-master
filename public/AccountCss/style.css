@@ -35,9 +35,10 @@ body {
   gap: 10px;
   padding: 10px 50px;
 }
-/* .formDiv {
-  /* border:  1px solid red; 
-} */
+.formDiv {
+  /* border:  1px solid red; */
+  padding-bottom: 20px;
+}
 .formDiv h1 {
   margin-bottom: 20px;
 }

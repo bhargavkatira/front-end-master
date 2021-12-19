@@ -30,60 +30,78 @@
   <body>
     <!-- navbar -->
     <header>
-      <div id="navbar"></div>
+     
+        <div class="navbar">
+
+          <h3><a href="http://localhost:3000"><img class="logo" src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg" alt=""></a></h3>
+        <div id="options">
+        <h3><a style="text-decoration: none;" href="http://localhost:3000/course"><p class="nvtxt">Courses</p> </a></h3>
+        <h3><a style="text-decoration: none;"href="http://localhost:3000/learn"><p class="nvtxt">Learn</p></a></h3>
+        <h3><a style="text-decoration: none;"href="http://localhost:3000/pricing"><p class="nvtxt">Pricing</p></a></h3>
+        <h3><a style="text-decoration: none;"href="http://localhost:3000/login"><p class="nvtxt" id="logouttxt"></p></a></h3> 
+        </div>
+        </div>
+        
+        <svg class="diagonal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none"><defs><linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#c02d28"></stop><stop offset="100%" stop-color="#e66225"></stop></linearGradient></defs><polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon></svg> `
+        
+    
     </header>
 
     <!-- body -->
-
+    
     <div id="head" style="margin-top: 1px">
-      <h1 style="margin-left: 55px">My Account</h1>
-
+  
+      <h1 id="AccountHead">My Account</h1>
       <div id="main">
         <div id="sidebar"></div>
 
         <div id="Right">
-          <form onsubmit="Signup(event)" class="form1" id="signup-form">
-            <h1 id="u1">Update User</h1>
+          <div class="formDiv">
+            <form onsubmit="update(event)" class="form1" id="signup-form">
+              <h1 id="u1">Update User</h1>
 
-            <p>
-              This email has not been confirmed.
-              <a href=""> Click to resend confirmation email</a>
-            </p>
+              <p>
+                This email has not been confirmed.
+                <a href=""> Click to resend confirmation email</a>
+              </p>
 
-            <div class="mail">
-              <p>Email</p>
-              <input type="text" class="a" id="email" />
-            </div>
-
-            <div class="middle">
-              <div>
-                <p>First Name</p>
-                <input type="text" id="Fname" />
+              <div class="mail">
+                <p>Email</p>
+                <input type="text" class="a" id="email" />
               </div>
-              <div>
-                <p>Last Name</p>
-                <input type="text" id="Lname" />
+
+              <div class="middle">
+                <div>
+                  <p>First Name</p>
+                  <input type="text" id="first_name" />
+                </div>
+                <div>
+                  <p>Last Name</p>
+                  <input type="text" id="last_name" />
+                </div>
               </div>
-            </div>
 
-            <div><input class="btn" type="submit" value="Update" /></div>
-          </form>
+              <div><input class="btn" type="submit" value="Update" /></div>
+            </form>
+          </div>
+          
+          <div class="formDiv">
+            <form action="" class="form2" onsubmit="updatePassword(event)">
+              <h1>Change Password</h1>
 
-          <form action="" class="form2">
-            <h1>Change Password</h1>
+              <div class="mail">
+                <p>New Password</p>
+                <input type="text" class="a" id="new_password"/>
+              </div>
 
-            <div class="mail">
-              <p>New Password</p>
-              <input type="text" class="a" />
-            </div>
+              <div class="mail">
+                <p>Confirm Password</p>
+                <input type="text" class="a" id="confirmpassword" />
+              </div>
 
-            <div class="mail">
-              <p>Confirm Password</p>
-              <input type="text" class="a" />
-            </div>
-
-            <div><input class="btn" type="submit" value="Update" /></div>
-          </form>
+              <div><input class="btn" type="submit" value="Update" /></div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -137,15 +155,6 @@
                   />
                   <p></p>
                 </div>
-
-                <div class="chat-bar-icons">
-                  <i
-                    id="chat-icon"
-                    style="color: #333"
-                    class="fa fa-fw fa-send"
-                    onclick="sendButton()"
-                  ></i>
-                </div>
               </div>
 
               <div id="chat-bar-bottom">
@@ -158,19 +167,11 @@
     </div>
   </body>
 </html>
-<script src="JavaScript/import.js" type="module"></script>
+<script type="module" src="Javascript/import_footer.js"></script>
 
 <script src="JavaScript/sidebar_import.js" type="module"></script>
 
-<script>
-  function ss() {
-    console.log("fgdfgdg");
-    window.location = "index.html";
-    console.log("fgdfgdg");
-  }
-  var frontend = JSON.parse(localStorage.getItem("user1"));
-  document.getElementById("u1").innerHTML = "Logout" + "(" + frontend + ")";
-</script>
+<script src="JavaScript/account.js" ></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
