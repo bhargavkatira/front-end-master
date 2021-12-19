@@ -72,12 +72,31 @@ async function getuser(user, email) {
       });
 
       let data = await res.json();
-
+ 
       console.log("data:", data);
       alert("User successfully registered");
-      window.location.href="/login";
+      
+      if (localStorage.getItem("frontend_user") === null) {
+      
+        localStorage.setItem("frontend_user", JSON.stringify([]));
+  
+        let arr = JSON.parse(localStorage.getItem("frontend_user"));
+        arr=[];
+        arr.push(data);
+        localStorage.setItem("frontend_user", JSON.stringify(arr));
+        window.location.href="/login";
+
       return data;
+    }else {
+      let arr = JSON.parse(localStorage.getItem("frontend_user"));
+      arr=[];
+      arr.push(data);
+      localStorage.setItem("frontend_user", JSON.stringify(arr));
+      window.location.href="/login";
+
+    return data;
     }
+  }
   } catch (err) {
     console.log("err:", err);
   }
