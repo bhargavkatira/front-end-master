@@ -37,6 +37,7 @@ body {
 }
 .formDiv {
   /* border:  1px solid red; */
+  padding-bottom: 20px;
 }
 .formDiv h1 {
   margin-bottom: 20px;
