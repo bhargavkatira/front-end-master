@@ -6,7 +6,7 @@ function footer() {
     <ul>
        <a href="http://localhost:3000/course"><li>Courses</li></a>
        <a href="http://localhost:3000/learn"><li>Learn</li></a>
-       <a href="http://localhost:3000/lecture"><li>Teachers</li></a>
+       <a href="http://localhost:3000/teachers"><li>Teachers</li></a>
        <a href=""><li>Guides</li></a>
        <a href="http://localhost:3000/pricing"><li>Pricing</li></a>
        <a href="http://localhost:3000/login"><li>Login</li></a>

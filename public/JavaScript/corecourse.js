@@ -1,13 +1,8 @@
-
-
-
 lp_parent = document.getElementById("lp_parent");
 
 items = JSON.parse(localStorage.getItem("course_l"));
 
-
-console.log(items.course_ids, " I am here")
-
+console.log(items.course_ids, " I am here");
 
 let about = document.getElementById("about_c");
 
@@ -16,18 +11,10 @@ about.innerText = items.title;
 let small_about = document.getElementById("small_about_c");
 small_about.innerText = items.description;
 
+let courseids = items.course_ids;
+console.log(courseids);
 
-let courseids=items.course_ids
-console.log(courseids)
-
-
-
-appendcourselist(courseids)
-
-
-
-
-
+appendcourselist(courseids);
 
 function appendcourselist(arr) {
   arr.forEach((item) => {
