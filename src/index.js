@@ -6,7 +6,7 @@ const coursesController = require("./controllers/courses.controller");
 const instructorController = require("./controllers/instructor.controller");
 const lectureController = require("./controllers/lecture.controller");
 const learnController = require("./controllers/learn.controller");
-// const { signup, signin } = require("./controllers/user.controller");
+const userController = require("./controllers/user.controller");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -15,8 +15,7 @@ app.use("/courses", coursesController);
 app.use("/instructors", instructorController);
 app.use("/lectures", lectureController);
 app.use("/learns", learnController);
-// app.post("/pricing", signup);
-// app.post("/login", signin);
+app.use("/users", userController);
 
 app.use(express.static("public"));
 
@@ -49,19 +48,15 @@ app.get("/workshop", (req, res) => {
 app.get("/account", (req, res) => {
   res.render("account.ejs");
 });
-
 app.get("/subscription", (req, res) => {
   res.render("subscription.ejs");
 });
-
 app.get("/payment", (req, res) => {
   res.render("payment.ejs");
 });
-
 app.get("/invoice", (req, res) => {
   res.render("invoices.ejs");
 });
-
 app.get("/lecture", (req, res) => {
   res.render("lecture.ejs");
 });
