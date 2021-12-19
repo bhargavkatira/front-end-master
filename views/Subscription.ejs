@@ -32,33 +32,68 @@
   <body>
     <!-- header -->
     <header>
-<<<<<<< HEAD
-      <div id="navbar"></div>
-    </header>
-
-    <div id="head">
-      <h1 style="margin-left: 55px">My Account</h1>
-=======
-      <div >
+      <div>
         <div class="navbar">
+          <h3>
+            <a href="http://localhost:3000"
+              ><img
+                class="logo"
+                src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg"
+                alt=""
+            /></a>
+          </h3>
+          <div id="options">
+            <h3>
+              <a
+                style="text-decoration: none"
+                href="http://localhost:3000/course"
+                ><p class="nvtxt">Courses</p>
+              </a>
+            </h3>
+            <h3>
+              <a
+                style="text-decoration: none"
+                href="http://localhost:3000/learn"
+                ><p class="nvtxt">Learn</p></a
+              >
+            </h3>
+            <h3>
+              <a
+                style="text-decoration: none"
+                href="http://localhost:3000/pricing"
+                ><p class="nvtxt">Pricing</p></a
+              >
+            </h3>
+            <h3>
+              <a
+                style="text-decoration: none"
+                href="http://localhost:3000/login"
+                ><p class="nvtxt" id="logouttxt"></p
+              ></a>
+            </h3>
+          </div>
+        </div>
 
-          <h3><a href="http://localhost:3000"><img class="logo" src="https://static.frontendmasters.com/assets/fm/js/static/frontendmasters.e1e10b58c1.svg" alt=""></a></h3>
-        <div id="options">
-        <h3><a style="text-decoration: none;" href="http://localhost:3000/course"><p class="nvtxt">Courses</p> </a></h3>
-        <h3><a style="text-decoration: none;"href="http://localhost:3000/learn"><p class="nvtxt">Learn</p></a></h3>
-        <h3><a style="text-decoration: none;"href="http://localhost:3000/pricing"><p class="nvtxt">Pricing</p></a></h3>
-        <h3><a style="text-decoration: none;"href="http://localhost:3000/login"><p class="nvtxt" id="logouttxt"></p></a></h3> 
-        </div>
-        </div>
-        
-        <svg class="diagonal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 10" preserveaspectratio="none"><defs><linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#c02d28"></stop><stop offset="100%" stop-color="#e66225"></stop></linearGradient></defs><polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon></svg> `
-        
+        <svg
+          class="diagonal"
+          xmlns="http://www.w3.org/2000/svg"
+          viewbox="0 0 100 10"
+          preserveaspectratio="none"
+        >
+          <defs>
+            <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#c02d28"></stop>
+              <stop offset="100%" stop-color="#e66225"></stop>
+            </linearGradient>
+          </defs>
+          <polygon points="0,2 0,0 100,0 100,10" fill="url(#linear)"></polygon>
+        </svg>
+        `
       </div>
     </header>
 
     <div id="head">
       <h1 id="AccountHead">My Account</h1>
->>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
 
       <div id="main">
         <div id="sidebar"></div>
@@ -70,11 +105,16 @@
           </p>
           <h1>Upgrade Subscription</h1>
 
-          <div class="sticker">
-            <div>
-              <div class="note">
-                <h4>MONTHLY</h4>
-                <span>@ $39</span>
+          <div id="priceDiv">
+            <div
+              class="subscription1"
+              id="subscription1"
+              onclick="transform(1)"
+            >
+              <p>MONTHLY</p>
+              <div class="price">
+                <i class="fas fa-check-circle" id="icon1"></i>
+                <p>$39</p>
               </div>
               <p>
                 Access all premium courses, workshops, and mobile apps. Renewed
@@ -82,18 +122,26 @@
               </p>
             </div>
 
-            <div>
-              <div class="note">
-                <h4>YEARLY</h4>
-                <span>@ $390</span>
+            <div
+              class="subscription2"
+              id="subscription2"
+              onclick="transform(2)"
+            >
+              <p>YEARLY</p>
+              <div class="price">
+                <p><i class="fas fa-check-circle" id="icon2"></i> $390</p>
               </div>
               <p>Access everything. Renewed yearly. Save $78 per year!</p>
             </div>
 
-            <div>
-              <div class="note">
-                <h4>MONTHLY TEAM</h4>
-                <span>@$195</span>
+            <div
+              class="subscription3"
+              id="subscription3"
+              onclick="transform(3)"
+            >
+              <p>MONTHLY TEAM</p>
+              <div class="price">
+                <p><i class="fas fa-check-circle" id="icon3"></i> $195</p>
               </div>
               <p>
                 Access for 10 people at your company, renewed monthly. Save 50%
@@ -101,10 +149,14 @@
               </p>
             </div>
 
-            <div>
-              <div class="note">
-                <h4>YEARLY TEAM</h4>
-                <span>@$1195</span>
+            <div
+              class="subscription4"
+              id="subscription4"
+              onclick="transform(4)"
+            >
+              <p>YEARLY TEAM</p>
+              <div class="price">
+                <p><i class="fas fa-check-circle" id="icon4"></i> $1950</p>
               </div>
               <p>
                 Access for 10 people at your company, renewed yearly. Save 50%
@@ -210,8 +262,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="./mscbot/static/scripts/chat.js"></script>
-<<<<<<< HEAD
-=======
 
-<script src="JavaScript/account.js" ></script>
->>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
+<script src="JavaScript/account.js"></script>

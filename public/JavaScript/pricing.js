@@ -23,8 +23,6 @@ function transform(id) {
     }
   }
 }
-<<<<<<< HEAD
-=======
 
 function signup() {
  
@@ -84,4 +82,3 @@ async function getuser(user, email) {
     console.log("err:", err);
   }
 }
->>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
