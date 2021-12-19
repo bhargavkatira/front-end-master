@@ -66,7 +66,7 @@ function appendcourselist(arr) {
     full_ac_btn.innerText = "Get Full Access";
 
     full_ac_btn.onclick = function () {
-      window.location.href = "/payment";
+      window.location.href = "/login";
     };
     full_ac_btn.setAttribute("id", "w_full_btn");
 
