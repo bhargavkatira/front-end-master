@@ -1,0 +1,53 @@
+#priceDiv {
+    height: 200px;
+    width: 75%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+  }
+  
+  .subscription1,
+  .subscription2,
+  .subscription3,
+  .subscription4 {
+    padding: 20px;
+    border-top: 7px solid #3e3e3e;
+    background: rgb(17, 17, 17);
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+  }
+  
+  .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 36%;
+    border-radius: 4px;
+    padding: 6px 4px;
+    background-color: #d85519;
+    margin-top: -18%;
+    margin-left: 76%;
+  }
+  .price i {
+    opacity: 0.4;
+  }
+  .subscription1:hover {
+    background: rgb(26, 26, 26);
+  }
+  .subscription2:hover {
+    background: rgb(26, 26, 26);
+  }
+  .subscription3:hover {
+    background: rgb(26, 26, 26);
+  }
+  .subscription4:hover {
+    background: rgb(26, 26, 26);
+  }
