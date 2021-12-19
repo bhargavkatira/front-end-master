@@ -3,7 +3,7 @@
   justify-content: space-between;
   background-color: #3f160c;
   width: 100%;
-  height: 78px;
+  height: 70px;
 }
 #options {
   width: 27%;
@@ -13,16 +13,16 @@
   margin-right: 12%;
 }
 .logo {
-  width: 92%;
-  margin-left: 60%;
+  width: 84%;
+  margin-left: 52%;
   padding: 15px;
 }
-
 .nvtxt {
   color: rgba(255, 255, 255, 0.582);
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
+  font-family: "Open Sans", sans-serif;
 }
 .nvtxt:hover {
   color: white;
@@ -38,7 +38,6 @@
   background-color: rgb(199, 38, 38);
   color: white;
 }
-
 .btn1:hover {
   background-color: #d8413c;
 }

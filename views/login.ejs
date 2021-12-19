@@ -10,7 +10,9 @@
       href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ydwfrxhhc7lgjuxkbif2"
     />
     <link rel="stylesheet" href="./AccountCss/login.css" />
-   
+    <link rel="stylesheet" href="./AccountCss/Navbar.css" />
+    <link rel="stylesheet" href="./AccountCss/footer.css" />
+
   </head>
   <body>
     <header>
@@ -19,20 +21,24 @@
     
 
     <div class="loginDiv">
-      <div class="form" id="login-form">
-        <p class="smallHead">Username or Email</p>
-        <input id="emaill" type="text" placeholder="Username or Email"  />
-        <p class="smallHead">Password</p>
-        <input id="passl" type="text" placeholder="Password"  />
 
-        <label for="remember"
-          ><input id="remember" type="checkbox" /> Remember Me
-        </label>
+      <form class="form" id="login-form"
+      action="/login"
+      method="POST"
+      >
+      <label for="email" class="smallHead">Username or Email</label>
+      <input id="email" type="text" name="email" placeholder="Username or Email" required />
+      <label for="password" class="smallHead">Password</label>
+      <input id="password" type="password" name="password" placeholder="Password"  required/>
 
-        <button id="signin" >sign in</button>
+      <label for="remember"
+        ><input id="remember" type="checkbox" required/> Remember Me
+      </label>
 
-        <a id="forget">forget your passwords?</a>
-      </div>
+       <input type="submit" value="Log In" id="signin" />
+
+      <a id="forget">forget your passwords?</a>
+    
     </div>
 
     <footer>
@@ -43,11 +49,6 @@
     
   </body>
 </html>
-
-
-
-
-<script src="JavaScript/signin.js"></script>
 
 <script src="JavaScript/import.js" type="module"></script>
 

@@ -140,7 +140,7 @@ circle {
 #counter {
   font-size: 70px;
   font-weight: 900;
-  margin-top: 40%;
+  margin-top: 0%;
 }
 
 #head_banner_s {
@@ -241,49 +241,4 @@ button {
 
 #lp_parent {
   padding: 5px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #3f160c;
-  width: 100%;
-  height: 78px;
-}
-#options {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 3%;
-}
-.logo {
-  width: 92%;
-  margin-left: 10%;
-  padding: 15px;
-}
-
-.nvtxt {
-  color: rgba(255, 255, 255, 0.582);
-  display: flex;
-  font-size: 18px;
-  font-weight: 300;
-}
-.nvtxt:hover {
-  color: white;
-}
-.diagonal {
-  fill: #e66225;
-  height: 24px;
-  width: 100%;
-}
-.btn1 {
-  padding: 12px 20px;
-  border-radius: 25px;
-  background-color: rgb(199, 38, 38);
-  color: white;
-}
-
-.btn1:hover {
-  background-color: #d8413c;
 }
