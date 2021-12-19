@@ -9,3 +9,4 @@ let footer_div = document.getElementById("foot");
 footer_div.innerHTML = footer();
   
 navbar_div.innerHTML = navbar();
+

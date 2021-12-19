@@ -94,6 +94,7 @@
   z-index: -2;
 }
 .txt3 {
+<<<<<<< HEAD
    padding: 10px 0;
   display: inline-block; 
   justify-content: center;
@@ -102,6 +103,16 @@
   height: 70px;
   border-radius: 35px;
   margin:30px 40%;
+=======
+  padding: 10px 0;
+  display: inline-block;
+  justify-content: center;
+
+  background-color: rgb(240, 87, 32);
+  height: 70px;
+  border-radius: 35px;
+  margin: 30px 40%;
+>>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
   width: 300px;
   padding-left: 100px;
 }

@@ -1,33 +1,26 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
-  
-  circle {
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+circle {
   fill: none;
   stroke: rgb(218, 81, 37);
   stroke-width: 20px;
   stroke-dasharray: 750;
   stroke-dashoffset: 750;
   animation: cir_anim 4s linear forwards;
-  
-  }
-  
-  
-  
-  @keyframes cir_anim {
-  
+}
+
+@keyframes cir_anim {
   60% {
     stroke-dashoffset: 0;
-  
   }
-  
-  
+
   100% {
-  
     stroke-dashoffset: 750;
+<<<<<<< HEAD
   
   }
   
@@ -154,3 +147,111 @@
        
       }
   
+=======
+  }
+}
+
+.svg_cir {
+  margin-top: -100%;
+}
+
+#learn_path_div {
+  margin: auto;
+  margin-bottom: 50px;
+}
+.in_circle {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: rgb(56, 56, 56);
+  margin: auto;
+
+  text-align: center;
+}
+
+.in_circle > p {
+  margin-top: 30%;
+}
+
+.out_circle {
+  display: grid;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: rgb(112, 112, 112);
+  margin: auto;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: "Open Sans", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.head_learn > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.head_learn > h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.center_div {
+  margin: auto;
+  text-align: center;
+}
+
+body > div {
+  width: 900px;
+  margin: auto;
+}
+
+#lp_parent {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  grid-gap: 3.7%;
+}
+
+#lp_parent > div {
+  background-color: rgb(56, 56, 56);
+
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#lp_parent > div > .cont {
+  text-align: center;
+  margin: auto;
+
+  margin-top: -50px;
+  height: 180px;
+}
+
+#counter {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+#start-btn-div > button {
+  background-color: #c63528;
+  border-color: #c63528;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+  padding: 6px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  min-width: 175px;
+  margin-bottom: 20px;
+}
+>>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd

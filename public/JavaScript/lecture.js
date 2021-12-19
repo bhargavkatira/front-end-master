@@ -1,26 +1,44 @@
+async function getdata_lp() {
+  try{
+    response = await fetch("/lectures");
+
+    data = await response.json();
+     console.log(data, "I am here")
+     lectureappend(data);
+    return data;
+  }
+
+  catch(e){console.log(e)}
+  }
+
+
+  getdata_lp();
+
+
 
   lect_parent = document.getElementById("lect_parent");
   lectures = JSON.parse(localStorage.getItem("lectures_s"));
 
-  console.log(lectures);
-  dataarr = lectures.insidebox_Watch_lectures;
-  lectureappend(dataarr);
+  // console.log(lectures);
+  // dataarr = lectures.lecture_ids;
+  // lectureappend(dataarr);
 
   function lectureappend(dataarr) {
+    try{
     dataarr.forEach((item) => {
       div = document.createElement("div");
 
       img_div = document.createElement("div");
       img = document.createElement("img");
-      img.src = item.thumbpic;
+      img.src = item.img;
       img_div.append(img);
 
       p1 = document.createElement("p");
-      p1.innerHTML = item.name;
+      p1.innerHTML = item.title;
       p1.setAttribute("class", "nameheading");
 
       p2 = document.createElement("p");
-      p2.innerHTML = item.litDes;
+      p2.innerHTML = item.content;
 
       cont_div = document.createElement("div");
 
@@ -31,4 +49,7 @@
     });
 
     console.log(dataarr);
+  }
+
+  catch(e){console.log(e)}
   }

@@ -17,13 +17,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   gap:12px;
+=======
+  gap: 12px;
+>>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
   font-size: 17px;
   color: white;
 }
 
-.form input{
-  padding:10px 20px;
+.form input {
+  padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -61,4 +65,7 @@ body {
 #forget:hover {
   color: #d18189;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dafae2e86b3dac7d2f595904bce00f134e8607fd
