@@ -1,25 +1,34 @@
+let frontend = JSON.parse(localStorage.getItem("frontend_user"));
+
+let user_mail = frontend[0].email;
+
+let login = document.getElementById("logouttxt");
+login.innerHTML = `Log Out (${frontend[0].first_name})`
+ 
+let username =  document.getElementById("u1");
+username.innerHTML = `${frontend[0].first_name} ${frontend[0].last_name} `;
+
+
 function update(e) {
     e.preventDefault();
     let email = document.getElementById("email").value;
     let first_name = document.getElementById("first_name").value;
     let last_name = document.getElementById("last_name").value;
-    let password = document.getElementById("new_password").value;
   
     let user_data = {
-    email,
-    first_name,
-    last_name,   
-    password, 
+    email:email,
+    first_name:first_name,
+    last_name:last_name,   
     };
   
     user_data = JSON.stringify(user_data);
-  
-    loginUser(user_data,email);
+    console.log(user_data);
+    loginUser(user_data);
   }
   
-  async function loginUser(user,email) {
+  async function loginUser(user) {
     try {
-      let response = await fetch(`/users/${email}`, {
+      let response = await fetch(`/users/${user_mail}`, {
         method: "PATCH",
         body: user,
         headers: {
@@ -28,31 +37,9 @@ function update(e) {
       });
   
       let data1 = await response.json();
-  
-      // console.log("Frontend_User:",data1.user);
-  
-      if(data1.user == null) {
-        alert("User Not Registered");
-        window.location.reload();
-      }else {
-        let res = await fetch(`/users/${email}`, {
-          method: "POST",
-          body: user,
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        let data2 = await res.json();
-        if(data2.status === "Failed") {
-          alert("Invalid Email or Password")
-          window.location.reload();
-        }else {
-          console.log("Frontend_User:",data2.user)
-          alert(`Welcome ${data2.user.first_name} !!`)
-          window.location.href="/account"
-        }  
-        
-      }
+      alert("User updated successfully !!")
+      console.log("Frontend_User:",data1);
+    
      
     } catch (err) {
       console.log("err:", err);

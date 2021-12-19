@@ -23,7 +23,7 @@ router.post("", async (req, res) => {
   
       if (!user) {
         res
-          .status(200)
+          .status(400)
           .json({
             status: "Failed",
             message: "Please provide correct email address and password.",
@@ -37,7 +37,7 @@ router.post("", async (req, res) => {
   
       if (!match) {
         res
-          .status(300)
+          .status(400)
           .json({
             status: "Failed",
             message: "Please provide correct email address and password.",
@@ -60,9 +60,9 @@ router.post("", async (req, res) => {
     }
   });
   
-  router.patch("/:id", async (req, res) => {
+  router.patch("/:email", async (req, res) => {
     try {
-      const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+      const user = await User.findOneAndUpdate({email:req.params.email}, req.body, {
         new: true,
       });
   
