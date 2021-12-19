@@ -95,11 +95,8 @@
 
     <div id="registration">
       <p id="regHead">Register for a Monthly Account</p>
-      
-      <div
-        class="form"
-        id="signup-form"
-      >
+
+      <div class="form" id="signup-form">
         <label for="email" class="smallHead"
           >Email (you'll need to confirm this email address)</label
         >
@@ -118,21 +115,24 @@
         <input type="password" id="password" name="password" required />
 
         <label for="confirmpassword" class="smallHead">Password Again</label>
-        <input type="password" name="confirmpassword" id="confirmPassword" required />
+        <input
+          type="password"
+          name="confirmpassword"
+          id="confirmPassword"
+          required
+        />
 
         <label for="payment_option" class="smallHead"
           >Choose Your Payment Method</label
         >
 
         <select name="payment_option" id="payment_option">
-
           <option value="card">Credit / Debit Card</option>
           <option value="paypal">PayPal</option>
 
           <input
             type="tel"
             maxlength="16"
-
             id="payment_detail"
             name="payment_detail"
             mplaceholder="Card number"
@@ -156,10 +156,14 @@
             >Privacy Policy</a
           >.
         </p>
-        <input type="submit" value="Start Learning" onclick="signup()" id="submitBtn" />
+        <input
+          type="submit"
+          value="Start Learning"
+          onclick="signup()"
+          id="submitBtn"
+        />
       </div>
     </div>
-
 
     <div class="tweet">
       <blockquote class="twitter-tweet">
