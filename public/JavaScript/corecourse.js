@@ -1,13 +1,8 @@
-
-
-
 lp_parent = document.getElementById("lp_parent");
 
 items = JSON.parse(localStorage.getItem("course_l"));
 
-
-console.log(items.course_ids, " I am here")
-
+console.log(items.course_ids, " I am here");
 
 let about = document.getElementById("about_c");
 
@@ -16,18 +11,10 @@ about.innerText = items.title;
 let small_about = document.getElementById("small_about_c");
 small_about.innerText = items.description;
 
+let courseids = items.course_ids;
+console.log(courseids);
 
-let courseids=items.course_ids
-console.log(courseids)
-
-
-
-appendcourselist(courseids)
-
-
-
-
-
+appendcourselist(courseids);
 
 function appendcourselist(arr) {
   arr.forEach((item) => {
@@ -50,7 +37,7 @@ function appendcourselist(arr) {
     ins_div = document.createElement("div");
     ins_div.setAttribute("class", "ins_div");
     ins_img = document.createElement("img");
-    ins_img.src = item.instructorImg;
+    ins_img.src = item.img;
     ins_img.style.width = "75px";
     ins_img.style.height = "75px";
     ins_img.style.borderRadius = "50%";
@@ -58,7 +45,7 @@ function appendcourselist(arr) {
     ins_name = document.createElement("p");
 
     ins_name.setAttribute("id", "in_name");
-    ins_name.innerText = item.instructor;
+    ins_name.innerText = item.i_name;
 
     ins_div.append(ins_img, ins_name);
 

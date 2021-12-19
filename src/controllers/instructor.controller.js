@@ -6,11 +6,11 @@ const upload = require("../middlewares/upload");
 
 const router = express.Router();
 
-router.post("/", upload.single("inst_images"), async (req, res) => {
+router.post("/",async (req, res) => {
   try {
     const instructor = await Instructor.create({
       name: req.body.name,
-      img: req.file.path,
+      img: req.body.img,
       speciality: req.body.speciality,
       about: req.body.about,
     });
