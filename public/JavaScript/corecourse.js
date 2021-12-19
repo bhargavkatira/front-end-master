@@ -37,7 +37,7 @@ function appendcourselist(arr) {
     ins_div = document.createElement("div");
     ins_div.setAttribute("class", "ins_div");
     ins_img = document.createElement("img");
-    ins_img.src = item.instructorImg;
+    ins_img.src = item.img;
     ins_img.style.width = "75px";
     ins_img.style.height = "75px";
     ins_img.style.borderRadius = "50%";
@@ -45,7 +45,7 @@ function appendcourselist(arr) {
     ins_name = document.createElement("p");
 
     ins_name.setAttribute("id", "in_name");
-    ins_name.innerText = item.instructor;
+    ins_name.innerText = item.i_name;
 
     ins_div.append(ins_img, ins_name);
 

@@ -116,4 +116,3 @@ async function getdata_lp() {
       }
     }, 20);
   }
-
